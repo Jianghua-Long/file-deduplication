@@ -1,4 +1,87 @@
-# 文件去重工具
+# File Deduplication Tool | 文件去重工具
+
+[English](#english) | [中文](#中文)
+
+# English
+
+A simple file deduplication tool with both CLI and GUI interfaces.
+
+## Features
+
+- Accurate duplicate file detection using MD5 hash
+- Smart recognition of common duplicate file naming patterns
+- Automatic detailed operation logging
+- Support for both CLI and GUI operations
+- Real-time progress display (GUI version)
+
+## Download and Installation
+
+1. Download the latest version from [Releases](https://github.com/Jianghua-Long/file-deduplication/releases)
+2. [GUI Version](https://github.com/Jianghua-Long/file-deduplication/releases/download/v1.0.0/file_dedup_gui.exe)
+3. [CLI Version](https://github.com/Jianghua-Long/file-deduplication/releases/download/v1.0.0/file_dedup_cli.exe)
+4. Extract the files to any directory
+
+## Usage
+
+### GUI Version (Recommended)
+
+1. Run `file_dedup_gui.exe`
+2. Click "Select Folder" to choose the directory to process
+3. Click "Start Deduplication" to begin
+4. Wait for completion and check results
+
+### CLI Version
+
+1. Open Command Prompt (CMD)
+2. Run: `file_dedup_cli.exe "folder_path"`
+
+## Notes
+
+- Backup important files before use, deleted files cannot be recovered
+- The program generates a `deduplication.log` file in the running directory
+- By default, files with the following naming patterns will be considered duplicates:
+  - Number suffixes like (1), (2)
+  - "copy" or "Copy"
+  - Chinese terms "副本" (copy) and "复制" (duplicate)
+  - Combined forms like "copy (1)"
+
+## System Requirements
+
+- Windows 7/8/10/11
+- No Python or other dependencies required
+
+## Log File
+
+The program generates a `deduplication.log` file recording:
+- Processed file information
+- Deleted duplicate files
+- Error messages
+- Statistics
+
+## FAQ
+
+Q: How are duplicate files determined?
+A: The program uses MD5 hash for strict comparison, only files with identical content are considered duplicates.
+
+Q: Can deleted files be recovered?
+A: No, please backup important files before use.
+
+Q: Why is processing large files slow?
+A: Because MD5 calculation requires reading the entire file, large files take longer to process.
+
+## Support
+
+For issues or suggestions:
+1. Check [Issues](https://github.com/Jianghua-Long/file-deduplication/issues)
+2. Submit a new Issue
+
+## License
+
+MIT License
+
+---
+
+# 中文
 
 一个简单的文件去重工具，支持命令行和图形界面两种使用方式。
 
@@ -29,7 +112,7 @@
 ### 命令行版本
 
 1. 打开命令提示符（CMD）
-2. 运行：file_dedup_cli.exe "文件夹路径"
+2. 运行：`file_dedup_cli.exe "文件夹路径"`
 
 ## 注意事项
 
