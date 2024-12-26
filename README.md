@@ -1,6 +1,6 @@
 # 文件去重工具
 
-一个简单但功能强大的文件去重工具，支持命令行和图形界面两种使用方式。
+一个简单的文件去重工具，支持命令行和图形界面两种使用方式。
 
 ## 功能特点
 
@@ -12,8 +12,10 @@
 
 ## 下载和安装
 
-1. 从 [Releases](https://github.com/yourusername/file-dedup/releases) 页面下载最新版本
-2. 解压下载的文件到任意目录
+1. 从 [Releases](https://github.com/Jianghua-Long/file-deduplication/releases) 页面下载最新版本
+2. [GUI版](https://github.com/Jianghua-Long/file-deduplication/releases/download/v1.0.0/file_dedup_gui.exe)
+3. [命令行版](https://github.com/Jianghua-Long/file-deduplication/releases/download/v1.0.0/file_dedup_cli.exe)
+4. 解压下载的文件到任意目录
 
 ## 使用方法
 
@@ -27,7 +29,7 @@
 ### 命令行版本
 
 1. 打开命令提示符（CMD）
-2. 运行：
+2. 运行：file_dedup_cli.exe "文件夹路径"
 
 ## 注意事项
 
@@ -67,9 +69,8 @@ A: 因为需要读取整个文件计算MD5值，大文件处理会相对较慢�
 ## 技术支持
 
 如有问题或建议，请：
-1. 查看 [Issues](https://github.com/yourusername/file-dedup/issues)
+1. 查看 [Issues](https://github.com/Jianghua-Long/file-deduplication/issues)
 2. 提交新的 Issue
-3. 发送邮件至：your.email@example.com
 
 ## 许可证
 
